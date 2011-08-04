@@ -8,7 +8,7 @@ namespace Monarchy {
 		static readonly IDictionary<Type, object> Container = new Dictionary<Type, object>();
 
 		public static T Get<T>() {
-			return (T) Get(typeof (T));
+			return (T) _Get(typeof (T));
 		}
 
 		public static object Get(Type type) {
